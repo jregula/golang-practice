@@ -54,6 +54,20 @@ func QuestionRange(csvFilepath string) FuncResult {
 			correct++
 		}
 	}
+	fmt.Printf("You answered %v answers correctly and %v incorrectly\n",correct, len(content) - correct)
+
 	return FuncResult{Err: nil, Correct: correct, Incorrect: len(content) - correct}
 
 }
+
+// Timeout Channel
+
+// Quiz Channel
+
+
+// if timeout
+// return quiz results
+
+// if quiz complete
+// return quiz results
+// end timer
